@@ -1,5 +1,19 @@
-/* General setup */
+/* Imported Typfaces */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+         url('../fonts/Montserrat-Regular.woff') format('woff');
+    /* Additional font properties (e.g., font-weight, font-style) can be added here */
+}
 
+@font-face {
+    font-family: 'Josefinslab';
+    src: url('../fonts/Josefinslab-Regular.woff2') format('woff2'),
+         url('../fonts/Josefinslab-Regular.woff') format('woff');
+    /* Additional font properties (e.g., font-weight, font-style) can be added here */
+}
+
+/* General setup */
 * {
     box-sizing: border-box;
 }
@@ -15,11 +29,9 @@ body {
 }
 
 /* Layout */
-
 main {
     overflow:auto;
     min-width:45rem;
-    
 }
 
 section {
@@ -62,59 +74,111 @@ section, aside, nav, footer {
 }
 
 /* header and footer */
-
 header, footer {
   border-top: .125rem solid #33658A;
   border-bottom: .125rem solid #33658A;
 }
 
-/* ------ START WRITING YOUR CODE BELOW THIS LINE ------ */
+/* Typography styling */
+html {
+    font-family: 'Montserrat', Arial, sans-serif; /* Use Montserrat or fallback to Arial and then to generic sans-serif */
+    font-size: 16px; /* Base font size */
+}
 
-/* NO changes should be made to any of the code above. */
+h1 {
+    font-family: 'Josefinslab', serif; /* Use Josefinslab or fallback to serif */
+    font-size: 3.75rem; /* 60px */
+    margin: 1.125rem 0; /* 18px */
+    letter-spacing: 0.125rem; /* 2px */
+    text-align: center;
+}
 
-/* NOTE: While you will be using some of the same CSS properties, the VALUES 
-   may need to be different in order to style the page correctly. */
+h2 {
+    font-family: 'Josefinslab', serif; /* Use Josefinslab or fallback to serif */
+    font-size: 1.5rem; /* 24px */
+    letter-spacing: 0.125rem; /* 2px */
+}
 
+p, ul, ol {
+    font-size: 0.75rem; /* 12px */
+    letter-spacing: 0.03125rem; /* 0.5px */
+    word-spacing: 0.125rem; /* 2px */
+}
 
+h2 + p {
+    text-indent: 1.5rem; /* 24px */
+}
 
-/* Imported Typfaces */
+figcaption {
+    font-size: 0.75rem; /* 12px */
+    margin-bottom: 2rem; /* 32px */
+}
 
+/* Link styling */
+a {
+    color: #33658A; /* Default link color */
+    text-decoration: none; /* Remove default underline */
+    outline: none; /* Remove default outline */
+}
 
+a:visited {
+    color: #33658A; /* Visited link color */
+}
 
+a:focus,
+a:hover {
+    text-decoration: none; /* Remove underline on focus and hover */
+}
 
+.long-list:hover a {
+    text-transform: uppercase; /* Transform text to uppercase on hover */
+}
 
-/* Typography Styles */
+/* Lists styling */
+ul, ol {
+    margin-top: 1rem; /* 16px top margin */
+    margin-bottom: 1rem; /* 16px bottom margin */
+    margin-left: 0; /* Remove default left margin */
+    margin-right: 0; /* Remove default right margin */
+}
 
+ul {
+    list-style-type: square; /* Square bullet points for unordered lists */
+}
 
+ol {
+    list-style-type: lower-alpha; /* Lowercase letters for ordered lists */
+}
 
+/* Navigation menu styling */
+nav {
+    padding-left: 0; /* Left padding of navigation container */
+    margin-top: 0.25rem; /* 4px top margin */
+}
 
+nav a {
+    text-decoration: none; /* Remove default underline */
+    display: inline-block; /* Display links as inline-block */
+    width: 100%; /* Set width to 100% */
+    line-height: 3; /* Set line height to 3 */
+    text-align: center; /* Center the text */
+    font-size: 1.125rem; /* 18px font size */
+    margin-bottom: 1.5rem; /* 24px bottom margin */
+    border-bottom: 0.0625rem solid #33658A; /* Solid border with 1px width and color #33658A */
+}
 
+nav a:focus,
+nav a:hover {
+    color: #FFF; /* Foreground color on focus and hover */
+    background-color: #33658A; /* Background color on focus and hover */
+}
 
-/* Link Styling */
+nav a:active {
+    color: #FFF; /* Foreground color on active state */
+    background-color: #000; /* Background color on active state */
+}
 
-
-
-
-
-
-/* List Styling */
-
-
-
-
-
-
-/* Navigation Menu */
-
-
-
-
-
-
-/* Footer Styles */
-
-
-
-
-
-
+/* Footer styling */
+footer {
+    text-align: center; /* Center the text in the footer */
+}
