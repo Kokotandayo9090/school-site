@@ -1,15 +1,17 @@
 /* Imported Typfaces */
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
-         url('../fonts/Montserrat-Regular.woff') format('woff');
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
     /* Additional font properties (e.g., font-weight, font-style) can be added here */
 }
 
 @font-face {
     font-family: 'Josefinslab';
-    src: url('../fonts/Josefinslab-Regular.woff2') format('woff2'),
-         url('../fonts/Josefinslab-Regular.woff') format('woff');
+    src: url('../fonts/Josefinslab-Regular.ttf') format('tryetype');
+    font-weight:normal;
+    font-style:normal;
     /* Additional font properties (e.g., font-weight, font-style) can be added here */
 }
 
